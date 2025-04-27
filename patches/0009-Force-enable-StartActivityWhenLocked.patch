@@ -1,4 +1,4 @@
-From 1b03067b74f8028f01cd11e411eae9e6e583ea50 Mon Sep 17 00:00:00 2001
+From dab6eb567005b584e22b8813a21fcb6c5e8a6ac1 Mon Sep 17 00:00:00 2001
 From: Arian <arian.kulmer@web.de>
 Date: Tue, 15 Oct 2024 19:06:16 +0200
 Subject: [PATCH 09/10] Force enable StartActivityWhenLocked

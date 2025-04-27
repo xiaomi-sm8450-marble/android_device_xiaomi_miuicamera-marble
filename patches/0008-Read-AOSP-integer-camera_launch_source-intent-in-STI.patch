@@ -1,4 +1,4 @@
-From 864bd6e24d941ceb1e69f16d585490fc11c843ae Mon Sep 17 00:00:00 2001
+From b4af6462e1f3ff5b5fa46fad6235d7c9c869de2b Mon Sep 17 00:00:00 2001
 From: Arian <arian.kulmer@web.de>
 Date: Tue, 15 Oct 2024 18:58:34 +0200
 Subject: [PATCH 08/10] Read AOSP integer camera_launch_source intent in

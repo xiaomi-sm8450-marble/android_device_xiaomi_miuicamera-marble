@@ -1,4 +1,4 @@
-From 8ddf170162acb72cee84fb99b509b59cface32e4 Mon Sep 17 00:00:00 2001
+From 57a7855bc79c71705cd93756891738990ec71530 Mon Sep 17 00:00:00 2001
 From: Arian <arian.kulmer@web.de>
 Date: Wed, 16 Oct 2024 01:29:58 +0200
 Subject: [PATCH 07/10] Change com.android.camera.action.REVIEW to
