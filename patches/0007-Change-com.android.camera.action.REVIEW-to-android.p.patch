@@ -1,4 +1,4 @@
-From 57a7855bc79c71705cd93756891738990ec71530 Mon Sep 17 00:00:00 2001
+From b45771c860e9984e3ff2468834244834c6cfde14 Mon Sep 17 00:00:00 2001
 From: Arian <arian.kulmer@web.de>
 Date: Wed, 16 Oct 2024 01:29:58 +0200
 Subject: [PATCH 07/10] Change com.android.camera.action.REVIEW to
@@ -11,12 +11,12 @@ This is the standard intent for review actions
  2 files changed, 3 insertions(+), 3 deletions(-)
 
 diff --git a/smali/com/android/camera/a6.smali b/smali/com/android/camera/a6.smali
-index d1de985de..c1684100c 100644
+index ae8ba283d..c6e76b302 100644
 --- a/smali/com/android/camera/a6.smali
 +++ b/smali/com/android/camera/a6.smali
-@@ -185,7 +185,7 @@
+@@ -191,7 +191,7 @@
  
- .field public static d1:Z = false
+ .field public static d1:J = 0x0L
  
 -.field public static final e:Ljava/lang/String; = "com.android.camera.action.REVIEW"
 +.field public static final e:Ljava/lang/String; = "android.provider.action.REVIEW"

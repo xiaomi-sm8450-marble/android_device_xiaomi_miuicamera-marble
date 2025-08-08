@@ -1,4 +1,4 @@
-From 5639536b1794a1e6b7f61a949e39f34d1b32ef49 Mon Sep 17 00:00:00 2001
+From 8322651b60b8e45d7ec115b35eba1d7303d287a0 Mon Sep 17 00:00:00 2001
 From: danielml <daniel@danielml.dev>
 Date: Fri, 19 Apr 2024 17:32:08 +0200
 Subject: [PATCH 02/10] Assume that mod_device is global

@@ -1,21 +1,21 @@
-From dab6eb567005b584e22b8813a21fcb6c5e8a6ac1 Mon Sep 17 00:00:00 2001
+From 4f83334d2a2694040b04b0d96d198047710a6c28 Mon Sep 17 00:00:00 2001
 From: Arian <arian.kulmer@web.de>
 Date: Tue, 15 Oct 2024 19:06:16 +0200
 Subject: [PATCH 09/10] Force enable StartActivityWhenLocked
 
 MIUI sends this with the intent, but on AOSP we don't get this parameter
 ---
- smali/com/android/camera/s2.smali | 57 ++-----------------------------
- 1 file changed, 3 insertions(+), 54 deletions(-)
+ smali/com/android/camera/s2.smali | 65 ++-----------------------------
+ 1 file changed, 3 insertions(+), 62 deletions(-)
 
 diff --git a/smali/com/android/camera/s2.smali b/smali/com/android/camera/s2.smali
-index 0317049aa..a824e9e4e 100644
+index c386fb3cd..dcb27ff35 100644
 --- a/smali/com/android/camera/s2.smali
 +++ b/smali/com/android/camera/s2.smali
-@@ -276,62 +276,11 @@
+@@ -280,70 +280,11 @@
  .end method
  
- .method public static L(Landroid/content/Intent;)Z
+ .method public static O(Landroid/content/Intent;)Z
 -    .locals 3
 -
 -    const/4 v0, 0x0
@@ -23,6 +23,14 @@ index 0317049aa..a824e9e4e 100644
 -    if-eqz p0, :cond_1
 -
 -    const-string v1, "StartActivityWhenLocked"
+-
+-    invoke-virtual {p0, v1, v0}, Landroid/content/Intent;->getBooleanExtra(Ljava/lang/String;Z)Z
+-
+-    move-result v1
+-
+-    if-nez v1, :cond_0
+-
+-    const-string v1, "from_keyguard_shortcut"
 -
 -    invoke-virtual {p0, v1, v0}, Landroid/content/Intent;->getBooleanExtra(Ljava/lang/String;Z)Z
 -
@@ -77,7 +85,7 @@ index 0317049aa..a824e9e4e 100644
 +    return v0
  .end method
  
- .method public static N(Landroid/content/Intent;)Z
+ .method public static Q(Landroid/content/Intent;)Z
 -- 
 2.47.2
 
