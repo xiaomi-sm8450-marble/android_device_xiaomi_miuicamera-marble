@@ -1,4 +1,4 @@
-From 4f83334d2a2694040b04b0d96d198047710a6c28 Mon Sep 17 00:00:00 2001
+From bbdd868a76386a9987b085dc14a759bdb13a4cd5 Mon Sep 17 00:00:00 2001
 From: Arian <arian.kulmer@web.de>
 Date: Tue, 15 Oct 2024 19:06:16 +0200
 Subject: [PATCH 09/10] Force enable StartActivityWhenLocked
@@ -9,7 +9,7 @@ MIUI sends this with the intent, but on AOSP we don't get this parameter
  1 file changed, 3 insertions(+), 62 deletions(-)
 
 diff --git a/smali/com/android/camera/s2.smali b/smali/com/android/camera/s2.smali
-index c386fb3cd..dcb27ff35 100644
+index 874c246cd..b224d0c76 100644
 --- a/smali/com/android/camera/s2.smali
 +++ b/smali/com/android/camera/s2.smali
 @@ -280,70 +280,11 @@

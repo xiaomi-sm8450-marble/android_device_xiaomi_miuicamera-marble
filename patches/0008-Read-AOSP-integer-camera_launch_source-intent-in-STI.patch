@@ -1,4 +1,4 @@
-From 9c0a5c21600fe4932f76680b5f57ea4f12af5e38 Mon Sep 17 00:00:00 2001
+From 46d9d51b8fc8a9c82003c8461fab2fdd5fc16088 Mon Sep 17 00:00:00 2001
 From: Arian <arian.kulmer@web.de>
 Date: Tue, 15 Oct 2024 18:58:34 +0200
 Subject: [PATCH 08/10] Read AOSP integer camera_launch_source intent in
@@ -10,7 +10,7 @@ MIUI changed the camera_launch_source to be a string, but AOSP provides integers
  1 file changed, 27 insertions(+), 51 deletions(-)
 
 diff --git a/smali/com/android/camera/s2.smali b/smali/com/android/camera/s2.smali
-index 5adf48dfa..c386fb3cd 100644
+index 2b38cd214..874c246cd 100644
 --- a/smali/com/android/camera/s2.smali
 +++ b/smali/com/android/camera/s2.smali
 @@ -528,9 +528,11 @@
